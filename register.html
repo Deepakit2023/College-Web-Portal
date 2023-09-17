@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration Form</title>
+    <style>
+        table
+         {
+            border: 1px solid black;
+            background-color:rgb(237, 239, 202);
+        }
+
+
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #9fa9b4;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px" width="100%" cellspacing="8" cellpadding="15">
+        <tr>
+            <th colspan="2">
+                <h1>Registration Form</h1>
+            </th>
+        </tr>
+        <tr>
+            <td> <label for="name">Student Name</label> </td>
+            <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td>Father's name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Mother's name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input type="date"></td>
+        </tr>
+        <td>Gender</td>
+        <td>Male <input type="radio" name="gender" value="male">
+            Female <input type="radio" name="gender" value="Fmale">
+        </td>
+        <tr>
+            <td>Email Id</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Mobile No.</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            
+          <td  colspan="2"><input type="submit" value="Submit" ></td>
+        </tr>
+    </table>
+
+</body>
+
+</html> 

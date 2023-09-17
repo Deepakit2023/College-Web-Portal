@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Portal</title>
+</head>
+
+<style> 
+body {
+        background-color:rgb(168, 212, 209);
+       }
+</style>
+<body >
+
+   <center> <img src="image1.jpg" alt=""></center>
+    <h1> Module Quiz Exam </h1>
+    <label>Q.1 SQL is Case-Sensitive Language</label>
+    <br>
+    <input type="radio" id="q1true" name="q1" value="true">
+    <label for="q1true">True</label>
+    <input type="radio" id="q1false" name="q1" value="false">
+    <label for="q1false">False</label>
+    <br><br>
+    <label>Q.2 Python is markup language</label>
+    <br>
+    <input type="radio" id="q2true" name="q2" value="true">
+    <label for="q2true">True</label>
+    <input type="radio" id="q2false" name="q2" value="false">
+    <label for="q2false">False</label>
+    <br><br>
+    <label>Q.3 We place JavaScript inside the "script" HTML element.</label>
+    <br>
+    <input type="radio" id="q3true" name="q3" value="true">
+    <label for="q3true">True</label>
+    <input type="radio" id="q3false" name="q3" value="false">
+    <label for="q3false">False</label>
+    <br><br>
+ 
+    <label >Q.4 Var &let keyword is used to define the variable in the javascript</label>
+    <br>
+    <input type="radio" id="q4true" name="q4" value="true">
+    <label for="q4true">True</label>
+    <input type="radio" id="q4false" name="q4" value="false">
+    <label for="q4false">False</label>
+    <br><br>
+
+    <label for="">Q.5 The company Sun Microsystems developed JavaScript.</label><br><br>
+    <input type="radio" id="q5true" name="q5" value="true">
+    <label for="q5true">True</label>
+    <input type="radio" id="q5false" name="q5" value="false">
+    <label for="q5false">False</label>
+    <br><br>
+
+
+    <label for="">Q.6 What will be the output? <br>
+
+        var x = 2;<br>
+        var y = "2";<br>
+        console.log(x==y);</label><br><br>
+
+    <input type="radio" id="q6true" name="q6" value="true">
+    <label for="q6true">True</label>
+    <input type="radio" id="q6false" name="q6" value="false">
+    <label for="q6false">False</label>
+    <br><br>
+
+    <input type="button" value="Submit" onclick="calculateScore()">
+    <input type="button" value="Cancel" onclick="cancel()">
+    <p id="result"></p>
+
+    <script>
+        function calculateScore() {
+            var score = 0;
+
+            var q1SelectedValue = document.getElementById("q1false").checked;
+            var q2SelectedValue = document.getElementById("q2false").checked;
+            var q3SelectedValue = document.getElementById("q3true").checked;
+            var q4SelectedValue = document.getElementById("q4true").checked;
+            var q5SelectedValue = document.getElementById("q5false").checked;
+            var q6SelectedValue = document.getElementById("q6true").checked;
+
+            if (q1SelectedValue) {
+                score = score + 1;
+            }
+
+            if (q2SelectedValue) {
+                score = score + 1;
+            }
+
+            if (q3SelectedValue) {
+                score = score + 1;
+            }
+            if  (q4SelectedValue) {
+                score = score + 1;
+            }
+            if (q5SelectedValue) {
+                score = score + 1;
+            }
+
+            if (q6SelectedValue) {
+                score = score + 1;
+            }
+
+            document.getElementById('result').innerHTML = "Your Score: " + score;
+        }
+        function cancel() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
